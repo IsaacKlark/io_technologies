@@ -1,0 +1,616 @@
+@-webkit-keyframes paddingLeft {
+    from {padding-left: 3vh;}
+    to {padding-left: 4vh;}
+}
+
+@keyframes paddingLeft {
+    from {padding-left: 3vh;}
+    to {padding-left: 4vh;}
+}
+
+body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background: 
+    url('../src/images/bakcground_right.svg'), 
+    url('../src/images/background.svg'),
+    -webkit-linear-gradient(315deg, rgba(59,169,222,1) 0%, #5b4ebe 60%);
+    background: 
+    url('../src/images/bakcground_right.svg'), 
+    url('../src/images/background.svg'),
+    linear-gradient(135deg, rgba(59,169,222,1) 0%, #5b4ebe 60%);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right center, -33% bottom;
+    min-height: 100vh;
+}
+
+.help-info {
+    position: absolute;
+    top: 30vh;
+}
+
+.show-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 50vw;
+}
+
+.hide-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 50vw;
+}
+
+.logo {
+    height: 5vh;
+    background-image: url('../src/images/logo.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 5vw;
+    color: #9ab9e3;
+    font-size: 5vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.h2-help {
+    color: #c7d3ed;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5vh;
+    margin-top: 1vh;
+}
+
+.buttons-help {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #c7d3ed;
+    font-family: 'Raleway', sans-serif;
+    font-size: 3vh;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 2vh;
+}
+
+.left-buttons {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5vh;
+    border: 0;
+    padding: 2vh 2vw;
+    margin: 0 1vw;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(200, 200, 200, 0.3);
+    box-shadow: 1vh 1vh 1vh rgba(0, 0, 0, 0.3);
+}
+
+.left-buttons:hover {
+    cursor: pointer;
+}
+
+.form {
+    position: absolute;
+    right: 11vw;
+    top: 25vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.h2-form {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5vh;
+    color: white;
+    margin: 0;
+}
+
+.sign-in {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5vh;
+    color: #c7d3ed;
+    margin-top: 2vh;
+    position: relative;
+}
+
+.input {
+    padding: 3vh;
+    font-size: 2.5vh;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0);
+    color: #c7d3ed;
+    border-bottom: 1px solid #c7d3ed;
+    outline: 0;
+    -webkit-transition: border-bottom 1s;
+    transition: border-bottom 1s;
+    position: relative;
+    width: 86%;
+}
+
+.filled:valid {
+    border-bottom: 1px solid green;
+    -webkit-animation: 0;
+            animation: 0;
+}
+
+.filled {
+    border-bottom: 1px solid red;
+    -webkit-animation: paddingLeft 0.1s infinite;
+            animation: paddingLeft 0.1s infinite;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    position: relative;
+}
+
+.input:focus {
+    border-bottom: 1px solid #006bda;
+    -webkit-animation: 0;
+            animation: 0;
+}
+
+.log-in {
+    margin-top: 6vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 0;
+    outline: 0;
+    color: white;
+    font-size: 2.5vh;
+    padding: 2vh 3vw;
+    text-transform: uppercase;
+    background: url('../src/images/right_arrow.svg'),
+        -webkit-linear-gradient(315deg, #006bda 0%, #00a7dd 100%);
+    background: url('../src/images/right_arrow.svg'),
+        linear-gradient(135deg, #006bda 0%, #00a7dd 100%);
+    font-family: 'Raleway', sans-serif;
+    background-size: 2.5vh, contain;
+    background-repeat: no-repeat;
+    background-position: 65% center, center center;
+    padding-left: 2.5vh;
+    -webkit-transition: background-position 1s;
+    transition: background-position 1s;
+}
+
+.Send-button {
+    margin-top: 6vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 0;
+    outline: 0;
+    color: white;
+    font-size: 2.5vh;
+    padding: 2vh 3vw;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(315deg, #006bda 0%, #00a7dd 100%);
+    background: linear-gradient(135deg, #006bda 0%, #00a7dd 100%);
+    font-family: 'Raleway', sans-serif;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-left: 2.5vh;
+    padding-right: 2.5vh;
+}
+
+.log-in:hover {
+    cursor: pointer;
+    background: url('../src/images/right_arrow.svg'),
+        -webkit-linear-gradient(315deg, #ff9425 0%, #ff5822 100%);
+    background: url('../src/images/right_arrow.svg'),
+        linear-gradient(135deg, #ff9425 0%, #ff5822 100%);
+    background-size: 2.5vh, contain;
+    background-repeat: no-repeat;
+    background-position: 67% center, center center;
+}
+
+.Send-button:hover {
+    cursor: pointer;
+    background: -webkit-linear-gradient(315deg, #ff9425 0%, #ff5822 100%);
+    background: linear-gradient(135deg, #ff9425 0%, #ff5822 100%);
+    background-size: contain;
+    background-position: center center;
+}
+
+.forgot-password {
+    margin-top: 4vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.p-forgot {
+    color: #c7d3ed;
+    margin-right: 1vw;
+    font-size: 2.5vh;
+}
+
+.reset {
+    color: #006bda;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5vh;
+    -webkit-transition: color 1s;
+    transition: color 1s;
+    position: relative;
+}
+
+.reset:hover {
+    color: white;
+}
+
+.forgont-password {
+    margin-bottom: 10vh;
+}
+
+.back-arrow {
+    width: 4vh;
+    height: 4vh;
+    background-image: url('../src/images/left_arrow.svg');
+    background-size: contain;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: -15vh;
+}
+
+.back-arrow:hover {
+    cursor: pointer;
+}
+
+.loggedin-ul {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0;
+    list-style: none;
+    width: 22vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 40vh;
+    overflow-y: scroll;
+}
+
+.logged-in {
+    position: absolute;
+    right: 9vw;
+    top: 25vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 22vw;
+}
+
+.hi-name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5vh;
+    color: white;
+    margin: 0;
+    text-align: center;
+}
+
+.list-a {
+    color: gray;
+    text-decoration: none;
+}
+
+.loggedin-li {
+    width: 80%;
+    padding: 3.5vh;
+    font-size: 2.5vh;
+    text-decoration: none;
+    border-bottom: 1px solid gray;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.list-a:hover {
+    color: white;
+}
+
+.input-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.error-mesage {
+    position: absolute;
+    width: 6vw;
+    right: -10vw;
+    background-image: url(../src/images/hint.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: gray;
+    padding: 2vh 1.5vw;
+    font-size: 3vh;
+    text-align: center;
+    display: none;
+}
+
+.filled:invalid + .error-mesage {
+    display: block;
+}
+
+.show-hide {
+    display: none; 
+}
+
+
+@media (max-width: 1000px) {
+    body {
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        background: 
+        url('../src/images/background.svg'),
+        -webkit-linear-gradient(315deg, rgba(59,169,222,1) 0%, #5b4ebe 100%);
+        background: 
+        url('../src/images/background.svg'),
+        linear-gradient(135deg, rgba(59,169,222,1) 0%, #5b4ebe 100%);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: -33% bottom;
+        min-height: 100vh;
+        overflow-y: scroll;
+    }
+
+    .register-form {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+
+    .help-info {
+        position: relative;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+    }
+
+    .show-left {
+        margin: 0 auto 10vh;
+        width: 100%;
+    }
+
+    .hide-left {
+        margin: 0 auto 10vh;
+        width: 100%; 
+    }
+
+    .h2-help {
+        text-align: center;
+    }
+
+    .form {
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+        position: relative;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background-color: #05102c;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                    -ms-grid-row-align: center;
+                align-items: center;
+    }
+
+    .logo {
+        padding-left: 10vh;
+    }
+
+    .log-in {
+        background: -webkit-linear-gradient(315deg, #006bda 0%, #00a7dd 100%);
+        background: linear-gradient(135deg, #006bda 0%, #00a7dd 100%);
+        padding: 2vh 5vh;
+        width: 80%;
+    }
+
+    .log-in:hover {
+        background: -webkit-linear-gradient(315deg, #ff9425 0%, #ff5822 100%);
+        background: linear-gradient(135deg, #ff9425 0%, #ff5822 100%);
+        padding: 2vh 5vh;
+        width: 40vh;
+        width: 80%;
+    }
+
+    .input-wrapper {
+        width: 80%;
+    }
+
+    .input {
+        width: 100%;
+        text-align: center;
+    }
+
+    .buttons-help {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        width: 60vw;
+    }
+
+    .left-buttons {
+        width: 500%;
+        margin: 2vh 0;
+        margin: 0 2vh;
+    }
+
+    .Send-button {
+        background: -webkit-linear-gradient(315deg, #006bda 0%, #00a7dd 100%);
+        background: linear-gradient(135deg, #006bda 0%, #00a7dd 100%);
+        padding: 1vh 5vh;
+        width: 80%;
+    }
+
+    .Send-button:hover {
+        background: -webkit-linear-gradient(315deg, #ff9425 0%, #ff5822 100%);
+        background: linear-gradient(135deg, #ff9425 0%, #ff5822 100%);
+        padding: 1vh 5vh;
+        width: 80%;
+    }
+
+    .password-recovery {
+        width: 72vw;
+    }
+
+    .back-arrow {
+        position: relative;
+        top: 0;
+        margin-bottom: 4vh;
+        margin-top: 2vh;
+    }
+
+    .logged-in {
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+        position: relative;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background-color: #05102c;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                    -ms-grid-row-align: center;
+                align-items: center;
+    }
+
+    .loggedin-ul {
+        width: 80%;
+    }
+}
+
+@media(max-width: 600px) {
+    .help-info {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .buttons-help {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+
+    .left-buttons {
+        width: 100%;
+        margin: 2vh 0;
+    }
+
+    .show-hide {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        width: 100%;
+        outline: 0;
+        border: 0;
+        background-color: black;
+        font-size: 5vh;
+        color: gray;
+        padding: 2vh;
+    }
+
+    .hide-left {
+        display: none;
+    }
+
+    .form {
+        height: 80vh;
+    }
+
+    .logged-in {
+        height: 80vh;
+    }
+}
