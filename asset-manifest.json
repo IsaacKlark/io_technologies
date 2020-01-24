@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/io_technologies/static/css/main.3a6cf45c.chunk.css",
+    "main.js": "/io_technologies/static/js/main.0c6a6157.chunk.js",
+    "main.js.map": "/io_technologies/static/js/main.0c6a6157.chunk.js.map",
+    "runtime-main.js": "/io_technologies/static/js/runtime-main.081ffdce.js",
+    "runtime-main.js.map": "/io_technologies/static/js/runtime-main.081ffdce.js.map",
+    "static/js/2.fd6a162a.chunk.js": "/io_technologies/static/js/2.fd6a162a.chunk.js",
+    "static/js/2.fd6a162a.chunk.js.map": "/io_technologies/static/js/2.fd6a162a.chunk.js.map",
+    "index.html": "/io_technologies/index.html",
+    "precache-manifest.45ca60a5cfd754219974a0751deaf11e.js": "/io_technologies/precache-manifest.45ca60a5cfd754219974a0751deaf11e.js",
+    "service-worker.js": "/io_technologies/service-worker.js",
+    "static/css/main.3a6cf45c.chunk.css.map": "/io_technologies/static/css/main.3a6cf45c.chunk.css.map",
+    "static/js/2.fd6a162a.chunk.js.LICENSE": "/io_technologies/static/js/2.fd6a162a.chunk.js.LICENSE",
+    "static/media/styles.css": "/io_technologies/static/media/right_arrow.144fc2b3.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.081ffdce.js",
+    "static/js/2.fd6a162a.chunk.js",
+    "static/css/main.3a6cf45c.chunk.css",
+    "static/js/main.0c6a6157.chunk.js"
+  ]
+}
